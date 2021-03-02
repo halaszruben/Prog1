@@ -59,8 +59,8 @@ try{
 	Circle circle {Point(200,300),60};
 	circle.set_style(Line_style(30));
 
-	//Ellipse ellipse{Point{200,300},75,25};
-	//ellipse.set_color(Color::dark_red);
+	Ellipse ellipse{Point{200,300},75,25};
+	ellipse.set_color(Color::dark_red);
 	Mark mark{Point(200,300),'x'};
 
 	
@@ -75,7 +75,7 @@ try{
 	window.attach(circle);
 	window.attach(mark);
 	window.attach(sizes);
-	//window.attach(ellipse);
+	window.attach(ellipse);
 	window.attach(text);
 	window.attach(poly_rect);
     window.attach(rectangle);
